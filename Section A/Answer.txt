@@ -1,2 +1,0 @@
-QUE-1 What problem does a  version control system solve?
-ANS-1 Version control 

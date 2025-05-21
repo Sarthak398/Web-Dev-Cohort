@@ -1,0 +1,64 @@
+  Section B: Hands-on Git Commands
+Task 1: Initialize a Repo and Track Changes
+Steps:
+Create a folder and initialize git
+
+bash
+Copy
+Edit
+mkdir git-practice
+cd git-practice
+git init
+✅ Significance: Initializes a new Git repository.
+
+Create a text file
+
+bash
+Copy
+Edit
+echo "This is a test file" > notes.txt
+Stage and commit the file
+
+bash
+Copy
+Edit
+git add notes.txt
+git commit -m "Add notes.txt with sample content"
+✅ Significance: git add stages changes; git commit saves them in the history.
+
+Check status and logs
+
+bash
+Copy
+Edit
+git status
+git log
+git log --oneline
+✅ Significance: Helps inspect the repo's current state and commit history. --oneline gives a compact summary.
+
+Task 2: Revert a Commit
+Steps:
+Add another file
+
+bash
+Copy
+Edit
+echo "console.log('Hello');" > hello.js
+git add hello.js
+git commit -m "Add hello.js"
+Delete that commit permanently (hard reset)
+
+bash
+Copy
+Edit
+git log --oneline
+git reset --hard HEAD~1
+✅ Significance: Removes the last commit. Use carefully as it erases history.
+
+Explain log
+
+bash
+Copy
+Edit
+git log --oneline
+You’ll see that the last commit (hello.js) is gone.

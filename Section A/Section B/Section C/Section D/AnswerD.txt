@@ -1,0 +1,40 @@
+ Section D: Rebase Practice
+Task 6: Rebase
+Steps:
+Create branch
+
+bash
+Copy
+Edit
+git checkout main
+git checkout -b feature-rebase
+Add commits in both branches
+In main:
+
+bash
+Copy
+Edit
+git checkout main
+echo "Main line" > main.txt
+git add . && git commit -m "Add main.txt"
+In feature-rebase:
+
+bash
+Copy
+Edit
+git checkout feature-rebase
+echo "Feature line" > feature.txt
+git add . && git commit -m "Add feature.txt"
+Rebase
+
+bash
+Copy
+Edit
+git rebase main
+View log
+
+bash
+Copy
+Edit
+git log --oneline
+✅ Significance: Rebasing replays your branch’s commits on top of another. Creates a cleaner history.

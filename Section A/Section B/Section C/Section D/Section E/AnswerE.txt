@@ -1,0 +1,34 @@
+ Section E: GitHub Contribution Task
+Objective: Simulate open-source contribution
+Steps:
+Fork the repo
+
+Visit: https://github.com/Danish956/Open-Source-Contribution.git
+
+Click Fork
+
+Clone your forked repo
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/Open-Source-Contribution.git
+cd Open-Source-Contribution
+Edit contributors file
+
+bash
+Copy
+Edit
+echo "Name: Your Name, Email: your@email.com" >> contributors.txt
+git add contributors.txt
+git commit -m "Add contribution details"
+git push origin main
+Create a Pull Request
+
+Go to your forked repo on GitHub
+
+Click "Compare & Pull Request"
+
+Add a message and submit it.
+
+✅ Significance: This mimics how you contribute to open-source projects using GitHub.

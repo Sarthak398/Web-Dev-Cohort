@@ -1,0 +1,55 @@
+ Section C: Branching Practice
+Task 4: Branching
+Steps:
+Create branch and switch
+
+bash
+Copy
+Edit
+git checkout -b feature-login
+Add login file and commit
+
+bash
+Copy
+Edit
+echo "<h1>Login</h1>" > login.html
+git add login.html
+git commit -m "Add login.html"
+Merge to main
+
+bash
+Copy
+Edit
+git checkout main
+git merge feature-login
+✅ Significance: Branches allow isolated work. Merging integrates changes back into the main branch.
+
+Task 5: Squash Merge
+Steps:
+Create branch and multiple commits
+
+bash
+Copy
+Edit
+git checkout -b feature-about
+echo "About 1" > about.txt
+git add . && git commit -m "Add line 1"
+echo "About 2" >> about.txt
+git add . && git commit -m "Add line 2"
+echo "About 3" >> about.txt
+git add . && git commit -m "Add line 3"
+Squash merge
+
+bash
+Copy
+Edit
+git checkout main
+git merge --squash feature-about
+git commit -m "Squash merge feature-about"
+Check commits
+
+bash
+Copy
+Edit
+git log --oneline
+✅ Significance: Squash merge compresses all commits from the branch into a single commit in main.
